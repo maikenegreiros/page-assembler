@@ -1,0 +1,16 @@
+{
+    "name": "maike-negreiros/page-assembler",
+    "description": "A simple code to assemble html files.",
+    "authors": [
+        {
+            "name": "Maike Negreiros",
+            "email": "maike_jbe@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "MaikeNegreiros\\": "src/" }
+    },
+    "require": {
+        "php": ">=7.1"
+    }
+}

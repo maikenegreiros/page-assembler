@@ -1,14 +1,22 @@
 {
     "name": "maike-negreiros/page-assembler",
     "description": "A simple code to assemble html files.",
+    "keywords": ["assemble", "assembler","pages","page assembler"],
+    "homepage": "https://github.com/maikenegreiros/page-assembler",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Maike Negreiros",
-            "email": "maike_jbe@hotmail.com"
+            "email": "maike_jbe@hotmail.com",
+            "homepage": "https://maikenegreiros.me",
+            "role": "Developer"
         }
     ],
     "autoload": {
-        "psr-4": { "MaikeNegreiros\\": "src/" }
+        "psr-4": {
+            "MaikeNegreiros\\": "src/"
+        }
     },
     "require": {
         "php": ">=7.1"

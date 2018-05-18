@@ -1,5 +1,5 @@
 <?php
-namespace BemBank\Models;
+namespace MaikeNegreiros;
 
 class PageAssembler
 {

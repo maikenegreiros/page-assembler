@@ -20,7 +20,7 @@ class PageAssembler
 
     private function getIncludes(string $templateString): array
     {
-        $regex = '/@include (\.{0,2}\/{1}[a-z]+)*\.html{1}/';
+        $regex = '/@include (\.{0,2}\/{1}[\w|\w-\w]+)*\.html{1}/';
         preg_match_all($regex, $templateString, $matchs);
         return $matchs[0];
     }

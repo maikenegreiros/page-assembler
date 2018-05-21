@@ -22,8 +22,10 @@ class PageAssembler
 
     private function createDirectoriesIfDontExist(string $path): void
     {
-        $directory = substr($path,0,strripos($path,"/"));
-        mkdir($directory, 0755, true);
+        if (!file_exists($path)) {
+            $directory = substr($path,0,strripos($path,"/"));
+            mkdir($directory, 0755, true);
+        }
     }
 
     private function getIncludes(string $templateString): array

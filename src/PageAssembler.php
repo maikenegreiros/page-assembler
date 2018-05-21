@@ -14,8 +14,16 @@ class PageAssembler
 
         $newFile = str_replace($includes, $components, $templateString);
 
+        $this->createDirectoriesIfDontExist($fileName);
+
         if(file_put_contents($fileName, $newFile)) return true;
         return false;
+    }
+
+    private function createDirectoriesIfDontExist(string $path): void
+    {
+        $directory = substr($path,0,strripos($path,"/"));
+        mkdir($directory, 0755, true);
     }
 
     private function getIncludes(string $templateString): array

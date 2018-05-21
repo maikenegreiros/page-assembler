@@ -22,8 +22,8 @@ class PageAssembler
 
     private function createDirectoriesIfDontExist(string $path): void
     {
-        if (!file_exists($path)) {
-            $directory = substr($path,0,strripos($path,"/"));
+        $directory = substr($path,0,strripos($path,"/"));
+        if (!file_exists($directory)) {
             mkdir($directory, 0755, true);
         }
     }
